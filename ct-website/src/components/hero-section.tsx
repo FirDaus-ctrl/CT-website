@@ -8,7 +8,7 @@ export function HeroSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Enterprise Technology Solutions for Your Business
+              Enterprise Technology Solutions for Your Business test
             </h1>
             <p className="text-lg text-gray-600 mb-8">
               Concepts Technologies is a leading IT company in Brunei Darussalam, providing cutting-edge technology
