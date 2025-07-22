@@ -1,8 +1,12 @@
-import { Header } from "@/components/header"
-import { HeroSection } from "@/components/hero-section"
-import { FeaturedProducts } from "@/components/featured-products"
-import { Newsletter } from "@/components/newsletter"
-import { Footer } from "@/components/footer"
+import { Header } from "@/components/header";
+import { HeroSection } from "@/components/hero-section";
+import { FeaturedProducts } from "@/components/featured-products";
+import { Newsletter } from "@/components/newsletter";
+import { Footer } from "@/components/footer";
+
+export const metadata = {
+  title: "Home | Concepts Technologies",
+};
 
 export default function HomePage() {
   return (
@@ -13,5 +17,5 @@ export default function HomePage() {
       <Newsletter />
       <Footer />
     </div>
-  )
+  );
 }

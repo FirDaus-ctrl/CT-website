@@ -7,10 +7,10 @@ import { Badge } from "@/components/ui/badge"
 const products = [
   {
     id: 1,
-    name: "Enterprise Cloud Infrastructure",
-    description: "Scalable cloud solutions for modern businesses",
-    image: "/placeholder.svg?height=200&width=300&text=Cloud+Infrastructure",
-    category: "Cloud Solutions",
+    name: "Microsoft",
+    description: "Microsoft solutions for enterprise",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/Microsoft.png",
+    category: "Microsoft",
     featured: true,
   },
   {
@@ -53,6 +53,54 @@ const products = [
     category: "Consultation",
     featured: true,
   },
+  {
+    id: 7,
+    name: "AI-Powered Automation",
+    description: "Automate tasks with intelligent AI solutions",
+    image: "/placeholder.svg?height=200&width=300&text=AI+Automation",
+    category: "Automation",
+    featured: true,
+  },
+  {
+    id: 8,
+    name: "IoT Solutions",
+    description: "Connect and manage your devices with our IoT platform",
+    image: "/placeholder.svg?height=200&width=300&text=IoT+Solutions",
+    category: "IoT",
+    featured: true,
+  },
+  {
+    id: 9,
+    name: "Blockchain Technology",
+    description: "Secure and transparent solutions using blockchain",
+    image: "/placeholder.svg?height=200&width=300&text=Blockchain",
+    category: "Blockchain",
+    featured: true,
+  },
+  {
+    id: 10,
+    name: "AR/VR Development",
+    description: "Immersive experiences with augmented and virtual reality",
+    image: "/placeholder.svg?height=200&width=300&text=AR/VR",
+    category: "AR/VR",
+    featured: true,
+  },
+  {
+    id: 11,
+    name: "Edge Computing Solutions",
+    description: "Process data closer to the source with edge computing",
+    image: "/placeholder.svg?height=200&width=300&text=Edge+Computing",
+    category: "Edge Computing",
+    featured: true,
+  },
+  {
+    id: 12,
+    name: "Quantum Computing Services",
+    description: "Harness the power of quantum computing for complex problems",
+    image: "/placeholder.svg?height=200&width=300&text=Quantum+Computing",
+    category: "Quantum Computing",
+    featured: true,
+  },
 ]
 
 export function FeaturedProducts() {
@@ -64,7 +112,7 @@ export function FeaturedProducts() {
           <p className="text-lg text-gray-600">Discover our comprehensive range of enterprise technology solutions</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => (
             <Card key={product.id} className="group hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
