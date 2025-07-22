@@ -3,6 +3,7 @@ import { Search, Heart, User, ShoppingCart, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import Image from 'next/image';
 
 export function Header() {
   return (
@@ -11,12 +12,14 @@ export function Header() {
         {/* Top header */}
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-500 via-green-500 to-orange-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">C</span>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-gray-900">CONCEPTS</div>
-              <div className="text-xs text-gray-600">TECHNOLOGIES</div>
+            <div className="w-36 h-auto flex items-center justify-center">
+              <Image
+                src="https://conceptstech.com.bn/wp-content/uploads/2024/05/CT-Logo2020RESIzE4-150x75.png"
+                alt="Concepts Technologies Logo"
+                width={150}
+                height={75}
+                className="object-contain"
+              />
             </div>
           </Link>
 

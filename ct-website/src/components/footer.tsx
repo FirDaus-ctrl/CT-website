@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -9,12 +10,14 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 via-green-500 to-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">C</span>
-              </div>
-              <div>
-                <div className="text-lg font-bold">CONCEPTS</div>
-                <div className="text-xs text-gray-400">TECHNOLOGIES</div>
+              <div className="w-36 h-auto flex items-center justify-center">
+                <Image
+                    src="https://conceptstech.com.bn/wp-content/uploads/2024/05/CT-Logo2020RESIzE4-150x75.png"
+                    alt="Concepts Technologies Logo"
+                    width={150}
+                    height={75}
+                    className="object-contain"
+                  />
               </div>
             </div>
             <p className="text-gray-300 mb-6">
