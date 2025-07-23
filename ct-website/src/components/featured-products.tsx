@@ -7,50 +7,98 @@ import { Badge } from "@/components/ui/badge"
 const products = [
   {
     id: 1,
-    name: "Enterprise Cloud Infrastructure",
-    description: "Scalable cloud solutions for modern businesses",
-    image: "/placeholder.svg?height=200&width=300&text=Cloud+Infrastructure",
-    category: "Cloud Solutions",
-    featured: true,
+    name: "Microsoft",
+    description: "Microsoft solutions for enterprise",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/Microsoft.png",
+    category: "Microsoft",
+    featured: false,
   },
   {
     id: 2,
-    name: "Cybersecurity Suite",
+    name: "Manage Engine",
     description: "Comprehensive security solutions for enterprise",
-    image: "/placeholder.svg?height=200&width=300&text=Cybersecurity",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/ManageEngine.png",
     category: "Security",
     featured: true,
   },
   {
     id: 3,
-    name: "Network Infrastructure",
-    description: "High-performance networking solutions",
-    image: "/placeholder.svg?height=200&width=300&text=Network+Solutions",
+    name: "Acer",
+    description: "Acer",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/Acer1.png",
     category: "Networking",
     featured: true,
   },
   {
     id: 4,
-    name: "Custom Software Development",
-    description: "Tailored software solutions for your business",
-    image: "/placeholder.svg?height=200&width=300&text=Software+Development",
+    name: "D-Link",
+    description: "D-Link networking solutions",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/D-Link.png",
     category: "Development",
     featured: true,
   },
   {
     id: 5,
-    name: "Data Analytics Platform",
-    description: "Transform your data into actionable insights",
-    image: "/placeholder.svg?height=200&width=300&text=Data+Analytics",
-    category: "Analytics",
+    name: "Adobe",
+    description: "Adobe",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/Adobe.png",
+    category: "Adobe",
     featured: true,
   },
   {
     id: 6,
-    name: "IT Consultation Services",
-    description: "Expert guidance for your digital transformation",
-    image: "/placeholder.svg?height=200&width=300&text=IT+Consultation",
-    category: "Consultation",
+    name: "Aver",
+    description: "Aver",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/Aver.png",
+    category: "Aver",
+    featured: true,
+  },
+  {
+    id: 7,
+    name: "APC",
+    description: "APC power solutions",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/APC-1.png",
+    category: "APC",
+    featured: true,
+  },
+  {
+    id: 8,
+    name: "Kaspersky",
+    description: "Kaspersky",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/Kaspersky.png",
+    category: "Kaspersky",
+    featured: true,
+  },
+  {
+    id: 9,
+    name: "Epson",
+    description: "Epson printing solutions",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/Epson1.png",
+    category: "Epson",
+    featured: true,
+  },
+  {
+    id: 10,
+    name: "Brother",
+    description: "Brother printing solutions",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/Brother.png",
+    category: "Brother",
+    featured: true,
+  },
+  {
+    id: 11,
+    name: "Trend Micro",
+    description: "Trend Micro cybersecurity solutions",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/Trend-Micro.png",
+    category: "Trend Micro",
+    featured: true,
+  },
+  {
+    id: 12,
+    name: "SAP",
+    description: "SAP enterprise solutions",
+    image: "https://conceptstech.com.bn/wp-content/uploads/2024/06/SAP.png",
+    category: "SAP",
     featured: true,
   },
 ]
@@ -60,11 +108,11 @@ export function FeaturedProducts() {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Featured Solutions</h2>
-          <p className="text-lg text-gray-600">Discover our comprehensive range of enterprise technology solutions</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Partners</h2>
+          <p className="text-lg text-gray-600">Discover our Partners and their solutions</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {products.map((product) => (
             <Card key={product.id} className="group hover:shadow-lg transition-shadow">
               <CardContent className="p-0">

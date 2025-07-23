@@ -27,7 +27,7 @@ export function HeroSection() {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <Image
-                src="/placeholder.svg?height=300&width=400&text=Professional+Team"
+                src="https://conceptstech.com.bn/wp-content/uploads/2024/06/IMG_3941-1024x683.jpg"
                 alt="Professional Team"
                 width={400}
                 height={300}
@@ -36,7 +36,7 @@ export function HeroSection() {
             </div>
             <div className="space-y-4 mt-8">
               <Image
-                src="/placeholder.svg?height=300&width=400&text=Modern+Office"
+                src="https://conceptstech.com.bn/wp-content/uploads/2024/06/20210508_162833Cropped4-1024x682.jpg"
                 alt="Modern Office"
                 width={400}
                 height={300}
